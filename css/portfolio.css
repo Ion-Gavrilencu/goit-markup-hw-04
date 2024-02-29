@@ -1,0 +1,274 @@
+:root {
+    --navy-blue-color: #2E2F42;
+    --slate-color: #434455;
+    --link-color-hover: #ff6c00;
+    --iris-color: #4d5ae5;
+    --white-color: #ffffff;
+    --cloud-color: #f4f4fd;
+    --ocean-color:#404bbf;
+    --second-family: "Raleway", sans-serif;
+    --fond-family: "Roboto", sans-serif;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;}
+
+body {
+    font-family: var(--fond-family);
+    color: var(--slate-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.global-header {
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.global-header .logo::before {
+    content: "WEB";
+    color: var(--iris-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: var(--second-family);
+}
+
+.global-header .logo {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: var(--second-family);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--navy-blue-color)
+}
+
+.main-nav-ul {
+    display: flex;
+    width: 500px;
+    padding-inline-start: 0;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.global-header .main-nav a,
+.global-header .main-nav a:visited,
+.global-header .main-nav a:active {
+    color: var(--link-title-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--navy-blue-color);
+}
+
+.global-header .main-nav a:hover,
+.global-header .social-div a:hover {
+    color: var(--link-color-hover);
+
+}
+
+.global-header .social-div a {
+    padding-left: 40px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--slate-color);
+}
+
+
+.global-header .main-nav a:hover,
+.global-header .social-div a:hover
+{
+    color:var(--link-color-hover);
+
+}
+
+.global-header .social-div a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--slate-color);
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+.section-button{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-inline-start:  0px;
+
+}
+.section-button button:hover{
+    background-color: var(--ocean-color);
+    color: #f4f4fd;
+}
+.first-section .all-button {
+    background-color: var(--cloud-color);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0,0.12), 0 2px 1px 0 rgba(0,0,0,0.08), 0 3px 1px 0 rgba(0,0,0,0.1);
+    width: 69px;
+    height:48px;
+    border-radius: 4px;
+    border-width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+    color:var(--iris-color);
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.first-section .web-button {
+    background-color:var(--cloud-color);
+    border-color: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    height: 48px;
+    border-width: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--iris-color);
+    padding: 12px  24px;
+    cursor: pointer;
+    text-align: center;
+}
+.first-section .app-button {
+    background-color: var(--cloud-color);
+    border-color: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    width: 78px;
+    height: 48px;
+    border-width: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--iris-color);
+    padding: 12px  24px;
+    cursor: pointer;
+    text-align: center;
+}
+.first-section .design-button {
+    background-color: var(--cloud-color);
+    border-color: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    width: 101px;
+    height: 48px;
+    border-width: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--iris-color);
+    padding: 12px  24px;
+    cursor: pointer;
+    text-align: center;
+}
+.first-section .marketing-button {
+    background-color: var(--cloud-color);
+    border-color: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    width: 126px;
+    height: 48px;
+    border-width: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--iris-color);
+    padding: 12px  24px;
+    cursor: pointer;
+    text-align: center;
+}
+.second-list,
+.third-list,
+.fourth-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-inline-start: 0px;
+}
+.second-section,
+.third-section,
+.fourth-section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+}
+.second-container,
+.third-container,
+.fourth-container{
+    width: 1200px;
+}
+
+.second-section h3,
+.third-section h3,
+.fourth-section h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--navy-blue-color);
+}
+
+.second-section p,
+.third-section p,
+.fourth-section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+.global-footer {
+    height: 312px;
+    background-color: var(--navy-blue-color);
+}
+
+.global-footer {
+    height: 312px;
+    background-color: var(--navy-blue-color);
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-left: 156px;
+}
+
+.global-footer .logo::before {
+    content: "WEB";
+    color: var(--iris-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: var(--second-family);
+}
+
+.global-footer .logo {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: var(--second-family);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cloud-color);
+}
+
+.global-footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--cloud-color);
+}
