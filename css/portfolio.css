@@ -72,7 +72,7 @@ ul {
 
 .global-header .main-nav a:hover,
 .global-header .social-div a:hover {
-    color: var(--link-color-hover);
+    color: var(--iris-color);
 
 }
 
@@ -85,13 +85,6 @@ ul {
     color: var(--slate-color);
 }
 
-
-.global-header .main-nav a:hover,
-.global-header .social-div a:hover
-{
-    color:var(--link-color-hover);
-
-}
 
 .global-header .social-div a {
     text-decoration: none;
