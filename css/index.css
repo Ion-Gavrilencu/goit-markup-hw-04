@@ -124,13 +124,20 @@ cursor: pointer;
 .second-container{
     width: 1200px;
 }
+.second-container li{
+    width: 264px;
+}
 .icons-second-section{
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 4px;
     width: 264px;
     height: 112px;
     background-color: var(--cloud-color);
 }
+
+
 .icons-second-section svg{
     width: 64px;
     height: 64px;
@@ -139,6 +146,7 @@ cursor: pointer;
     display: flex;
     gap: 24px;
     padding-inline-start: 0px;
+    justify-content: center;
 }
 .second-section h3{
     font-weight: 500;
@@ -181,7 +189,6 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 30px;
 }
 .icons-fourth-section .icon svg{
     width: 16px;
@@ -208,12 +215,19 @@ cursor: pointer;
     line-height: 1.5em;
     text-align: center;
     color: var(--navy-blue-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
 .fourth-section p{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5em;
-        text-align: center;
+        justify-content:  center;
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 10px;
 }
 .fourth-section ul{
     display: flex;
@@ -221,6 +235,16 @@ cursor: pointer;
     justify-content: center;
     padding-top: 72px;
     gap: 24px;
+}
+.fourth-section li{
+    height: 428px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px, 0px, 4px, 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 .fifth-section{
         height: 200px;
