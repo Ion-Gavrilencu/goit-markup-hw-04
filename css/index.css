@@ -273,6 +273,7 @@ cursor: pointer;
 .footer-container{
     padding-top: 100px;
     padding-left: 156px;
+    width: 500px;
 }
 .global-footer .logo::before {
     content: "WEB";
@@ -297,3 +298,25 @@ cursor: pointer;
         line-height: 1.5em;
         color: var(--cloud-color);
     }
+    .icons-global-footer{
+        display: flex;
+            justify-content: center;
+            gap: 10px;
+    }
+    .icons-global-footer .icon svg{
+        width: 16px;
+            height: 16px;
+    }
+    .icons-global-footer .icon{
+        width: 40px;
+            height: 40px;
+            background-color: var(--iris-color);
+            color: var(--cloud-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+         .icons-global-footer .icon:hover {
+             background-color: var(--cloud-color);
+             color: var(--iris-color);}
