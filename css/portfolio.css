@@ -1,6 +1,7 @@
 :root {
     --navy-blue-color: #2E2F42;
     --slate-color: #434455;
+    --light-slate-color: #8e8f99;
     --link-color-hover: #ff6c00;
     --iris-color: #4d5ae5;
     --white-color: #ffffff;
@@ -24,13 +25,19 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .global-header {
     background-color: var(--white-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
 border-bottom: 1px solid var(--cornflower-color);
-box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+ 0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+ 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .global-header .logo::before {
@@ -60,12 +67,8 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     gap: 40px;
 }
 
-.global-header .main-nav a,
-.global-header .main-nav a:visited,
-.global-header .main-nav a:active {
-    color: var(--link-title-color);
+.global-header .main-nav a{
     text-transform: uppercase;
-    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
@@ -80,21 +83,12 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .global-header .social-div a {
     padding-left: 40px;
-    text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5em;
     color: var(--slate-color);
 }
 
-
-.global-header .social-div a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5em;
-    color: var(--slate-color);
-}
 .container-button{
     display: flex;
     justify-content: center;
@@ -111,7 +105,9 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 .section-button button:hover{
     background-color: var(--ocean-color);
     color: #f4f4fd;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+     0 2px 1px 0 rgba(0, 0, 0, 0.08),
+      0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .first-section .all-button {
     background-color: var(--cloud-color);
@@ -250,16 +246,14 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 .global-footer {
     height: 312px;
     background-color: var(--navy-blue-color);
-}
-
-.global-footer {
-    height: 312px;
-    background-color: var(--navy-blue-color);
+    display: flex;
+    align-items: center;
 }
 
 .footer-container {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 156px;
+    width: 500px;
 }
 
 .global-footer .logo::before {
@@ -286,4 +280,42 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     font-size: 16px;
     line-height: 1.5em;
     color: var(--cloud-color);
+
+}
+
+.container-footer-social-media {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+}
+
+.icons-global-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-inline-start: 0;
+}
+
+.icons-global-footer .icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.icons-global-footer .icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris-color);
+    color: var(--cloud-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-global-footer .icon:hover {
+    background-color: var(--cloud-color);
+    color: var(--iris-color);
 }

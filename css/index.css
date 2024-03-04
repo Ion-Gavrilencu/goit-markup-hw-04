@@ -2,10 +2,13 @@
 :root{
     --navy-blue-color:#2E2F42;
     --slate-color:#434455;
+    --light-slate-color: #8e8f99;
     --link-color-hover:#ff6c00;
     --iris-color:#4d5ae5;
     --white-color:#ffffff;
     --cloud-color:#f4f4fd;
+    --ocean-color: #404bbf;
+    --cornflower-color: #E7E9FC;
     --second-family:"Raleway",sans-serif;
     --fond-family:"Roboto", sans-serif;
 }
@@ -17,8 +20,12 @@
 body{font-family: var(--fond-family);
     color: var(--slate-color);
   }
-ul {list-style-type: none;}
-  a{text-decoration: none;}      
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}      
 .global-header{
     background-color:var(--white-color);
     display: flex;
@@ -49,8 +56,7 @@ ul {list-style-type: none;}
     justify-content:flex-start;
     gap: 40px;
 }
-.global-header .main-nav a
-{
+.global-header .main-nav a{
 text-transform: uppercase;
 font-weight: 500;
 font-size: 16px;
@@ -247,7 +253,7 @@ cursor: pointer;
 
 }
 .fifth-section{
-        height: 200px;
+        height: 300px;
         
 }
 .icons-fifth-section{
@@ -261,17 +267,35 @@ cursor: pointer;
         gap: 24px;
         justify-content: center;
 }
+.icons-fifth-section li{
+    border: 1px solid var(--light-slate-color);
+        border-radius: 4px;
+        width: 168px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.icons-fifth-section li:hover,
+.icons-fifth-section svg:hover{
+    color:var(--iris-color) ;
+    border-color: var(--iris-color);
+    cursor: pointer;
+}
 .icons-fifth-section svg{
     justify-content: center;
     width: 104px;
  height: 56px;
+ color: var(--light-slate-color);
 }
 .global-footer{
     height: 312px;
     background-color:var(--navy-blue-color);
+    display: flex;
+    align-items: center;
 }
 .footer-container{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 156px;
     width: 500px;
 }
@@ -297,11 +321,21 @@ cursor: pointer;
         font-size: 16px;
         line-height: 1.5em;
         color: var(--cloud-color);
+    
     }
+        .container-footer-social-media{
+            font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5em;
+                letter-spacing: 0.02em;
+                color: var(--white-color);
+        }
     .icons-global-footer{
         display: flex;
             justify-content: center;
             gap: 10px;
+            padding-inline-start: 0;
     }
     .icons-global-footer .icon svg{
         width: 16px;
